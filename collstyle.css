@@ -363,6 +363,7 @@ main section #offer p>span:nth-child(2) {
 	background-color: #5956e9;
 	box-shadow: 0px 25px 10px -5px lightgray;
 	justify-content: center;
+	align-items: center;
 }
 
 #arrow_circle {
@@ -822,6 +823,9 @@ main section #offer p>span:nth-child(2) {
   .info_square{
 	padding:10px 50px 10px 25px;
   }
+  .left_bottom{
+	width:400px;
+}
 
 }
 
@@ -831,13 +835,11 @@ main section #offer p>span:nth-child(2) {
 		padding:5% 3% !important;
 		font-size: 15px !important;
 	}
-	#sloutions{
-		margin-top:10%;
-	}
+
 	#up_arrow{
 		right:1px;
 		width:35px;
-		height:30px
+		height:30px;
 	  }
 	  .reviewer{
 		height:250px;
@@ -871,6 +873,16 @@ main section #offer p>span:nth-child(2) {
 		width: 40%;
 		height: auto;
 	}
+	.blogs{
+		flex-direction: column;
+		gap:5px;
+	}
+	.blog_desc h2{
+		font-size:1.2rem
+	}
+	.left_bottom{
+		width:350px;
+	}
 
 }
 @media only screen and (max-width: 1030px) {
@@ -878,16 +890,14 @@ main section #offer p>span:nth-child(2) {
 		margin:0 5% !important;
 		padding:5% 2.5% !important;
 	}
-	#sloutions{
-		margin-top:15%;
-	}
+
 	#up_arrow{
 		right:1px;
 		width:35px;
-		height:30px
+		height:40px
 	  }
 	  .info{
-		width:fit-content
+		width:100%;
 	  }
 	  .reviewer, .team{
 		height:200px;
@@ -926,5 +936,15 @@ main section #offer p>span:nth-child(2) {
 	}
 	.side_image h1::after{
 		width:40px;
+	}
+	.blogs{
+		flex-direction: column;
+		gap:5px;
+	}
+	.blog_desc h2{
+		font-size:1.2rem
+	}
+	.left_bottom{
+		width:250px;
 	}
 }
