@@ -11,42 +11,9 @@
 	justify-content: center;
 }
 
-.header_container,
-.nav_list,
-.side_bar,
-#offer,
-.align_div,
-#second_page,
-#offer_image,
-#third_page,
-.info,
-#offer_section,
-#globe,
-#group,
-#star,
-#left_column,
-.right_side,
-.container,
-.left_contain,
-.list,
-.right_contain,
-#sloutions,
-.icons,
-#project_seciton,
-#team_members,
-.review,
-#blog_section,
-.blogs,
-.blog_desc,
-.contact_form,
-#contact_us,
-#end_page,
-#help_section,
-.footer_links,
-.footer_links ul,
-#end_links,
-#up_arrow,
-#left_container label {
+
+
+.flex_class {
 	display: flex;
 }
 
@@ -76,11 +43,13 @@
 .navbar,
 ul {
 	list-style-type: none;
+	align-self: center;
 }
 
 .logo {
 	width: 10%;
 	height: 10%;
+	align-self: center;
 }
 
 .nav_item::after,
@@ -144,23 +113,12 @@ background-color:#292930;
 cursor: pointer;
 }
 
-#login,
-#hiw,
-#submit_button,
-#about_button,
-#send_btt {
-	width: fit-content;
-}
-
-#hiw,
-#consultation,
-#about_button,
-#submit_button,
-#send_btt {
+.bttns {
 	padding: 20px 40px;
 	border: none;
 	border-radius: 10px;
 	background: #82cefd;
+	width: fit-content;
 }
 
 .lang_button,
@@ -175,15 +133,7 @@ main section #offer p {
 	border: none;
 }
 
-#lang,
-#hiw,
-#login,
-#consultation,
-#about_button,
-#go_offer,
-#up_arrow,
-#submit_button,
-#send_btt {
+.pointer_class {
 	cursor: pointer;
 }
 
@@ -739,6 +689,10 @@ main section #offer p>span:nth-child(2) {
 	gap: 30px;
 }
 
+.footer_links .logo{
+	align-self: start;
+}
+
 
 @media only screen and (max-width: 1900px) {
 	.container{
@@ -812,6 +766,9 @@ main section #offer p>span:nth-child(2) {
   #up_arrow{
 	right:10px;
   }
+  .reviewer{
+	height: 550px;;
+  }
 
   }
 
@@ -853,6 +810,18 @@ main section #offer p>span:nth-child(2) {
   #right_container img{
 	height:470px;
   }
+  .reviewer{
+	height:450px;
+  }
+  .tab p{
+	font-size:1rem
+  }
+  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
+	gap:50px;
+  }
+  .info_square{
+	padding:10px 50px 10px 25px;
+  }
 
 }
 
@@ -860,6 +829,7 @@ main section #offer p>span:nth-child(2) {
 	.container{
 		margin:1% 3% !important;
 		padding:5% 3% !important;
+		font-size: 15px !important;
 	}
 	#sloutions{
 		margin-top:10%;
@@ -869,20 +839,92 @@ main section #offer p>span:nth-child(2) {
 		width:35px;
 		height:30px
 	  }
+	  .reviewer{
+		height:250px;
+	  }
+	  .header_container{
+		margin:3% 4%
+	  }
+	  .tab p{
+		font-size:1rem
+	  }
+	  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
+		gap:50px;
+	  }
+
+	  #third_page{
+		gap:50px;
+	  }
+	  .info_square{
+		padding:10px 50px 10px 25px;
+	  }
+	  #main_heading {
+		font-size: 2.5rem;
+	}
+	#offer{
+		transform: unset;
+	}
+	#right_column{
+		gap:30px;
+	}
+	.footer_links .logo {
+		width: 40%;
+		height: auto;
+	}
 
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1030px) {
 	.container{
-		margin:1% 2.5% !important;
+		margin:0 5% !important;
 		padding:5% 2.5% !important;
 	}
 	#sloutions{
-		margin-top:8%;
+		margin-top:15%;
 	}
 	#up_arrow{
 		right:1px;
 		width:35px;
 		height:30px
 	  }
+	  .info{
+		width:fit-content
+	  }
+	  .reviewer, .team{
+		height:200px;
+	  }
+	  .header_container{
+		margin:3% 2%
+	  }
+	  .bttns{
+		padding:20px 10px;
+	  }
+	  .tab p{
+		font-size:1rem
+	  }
+	  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
+		gap:50px;
+	  }
 
+	  #third_page{
+		gap:50px;
+	  }
+	  .info_square{
+		padding:10px 50px 10px 25px;
+	  }
+	  #main_heading {
+		font-size: 2rem;
+	}
+	#offer{
+		transform: unset;
+	}
+	#right_column{
+		gap:30px;
+	}
+	.footer_links .logo {
+		width: 40%;
+		height: auto;
+	}
+	.side_image h1::after{
+		width:40px;
+	}
 }
