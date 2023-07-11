@@ -12,7 +12,6 @@
 }
 
 
-
 .flex_class {
 	display: flex;
 }
@@ -89,12 +88,13 @@ ul {
 	transition: visibility 500ms, opacity 300ms;
 	z-index: 1;
 }
+
 #home_menu li a,
 #port_menu li a,
 #pages_menu li a,
 #blog_menu li a,
-#lang_menu li a{
-color:white;
+#lang_menu li a {
+	color: white;
 }
 
 .home_options:hover #home_menu,
@@ -106,11 +106,12 @@ color:white;
 	opacity: 1;
 	z-index: 1;
 }
-#lang_menu li button{
-color:white;
-border:none;
-background-color:#292930;
-cursor: pointer;
+
+#lang_menu li button {
+	color: white;
+	border: none;
+	background-color: #292930;
+	cursor: pointer;
 }
 
 .bttns {
@@ -438,7 +439,7 @@ main section #offer p>span:nth-child(2) {
 	cursor: pointer;
 	text-align: center;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 }
 
 #left_container input:checked+label {
@@ -461,7 +462,7 @@ main section #offer p>span:nth-child(2) {
 
 .tab {
 	grid-column: span 12;
-	margin-top:30px;
+	margin-top: 30px;
 }
 
 .tab p {
@@ -504,9 +505,11 @@ main section #offer p>span:nth-child(2) {
 #project_seciton {
 	gap: 30px;
 }
-.centerized_text{
+
+.centerized_text {
 	text-align: center;
 }
+
 .side_image h1::after {
 	background-image: url(images/next.png);
 	background-size: 20px;
@@ -683,270 +686,339 @@ main section #offer p>span:nth-child(2) {
 	gap: 30px;
 }
 
-.footer_links .logo{
+.footer_links .logo {
 	align-self: start;
 }
 
 
 @media only screen and (max-width: 1900px) {
-	.container{
-		margin:2% 10% !important;
-		padding:5% 5% !important;
+	.container {
+		margin: 2% 10% !important;
+		padding: 5% 5% !important;
 	}
 
-.projects, .team{
-	height:350px;
-  }
-
-  #offer_image img{
-	height:650px;
-  }
-  #offer_image{
-	width:auto;
-  }
-  #right_container img{
-	height:580px;
-  }
-
-  }
-
-  @media only screen and (max-width: 1650px) {
-	.container{
-		margin:2% 4% !important;
-		padding:5% 3% !important;
+	.projects,
+	.team {
+		height: 350px;
 	}
+
+	#offer_image img {
+		height: 650px;
+	}
+
+	#offer_image {
+		width: auto;
+	}
+
+	#right_container img {
+		height: 580px;
+	}
+
+}
+
+@media only screen and (max-width: 1650px) {
+	.container {
+		margin: 2% 4% !important;
+		padding: 5% 3% !important;
+	}
+
 	#main_heading {
 		font-size: 3rem;
 	}
+
 	.review p:first-of-type {
 		font-size: 1.3rem;
 		opacity: 60%;
 	}
 
-  #up_arrow{
-	right:1px;
-	width:40px;
-	height:35px
-  }
-  .projects, .team{
-	height:250px;
-  }
+	#up_arrow {
+		right: 1px;
+		width: 40px;
+		height: 35px
+	}
 
-  #offer_image img{
-	height:450px;
-  }
-  #offer_image{
-	width:auto;
-  }
-  #right_container img{
-	height:470px;
-  }
-  .reviewer{
-	height:450px;
-  }
-  .tab p{
-	font-size:1rem
-  }
-  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
-	gap:50px;
-  }
-  .info_square{
-	padding:10px 50px 10px 25px;
-  }
-  .left_bottom{
-	width:400px;
+	.projects,
+	.team {
+		height: 250px;
+	}
+
+	#offer_image img {
+		height: 450px;
+	}
+
+	#offer_image {
+		width: auto;
+	}
+
+	#right_container img {
+		height: 470px;
+	}
+
+	.reviewer {
+		height: 450px;
+	}
+
+	.tab p {
+		font-size: 1rem
+	}
+
+	#mission:checked~.tab.mission_content,
+	#vision:checked~.tab.vision_content,
+	#value:checked~.tab.value_content {
+		gap: 50px;
+	}
+
+	.info_square {
+		padding: 10px 50px 10px 25px;
+	}
+
+	.left_bottom {
+		width: 400px;
+	}
 }
-  }
 
-@media only screen and (min-width: 1150px) and (max-width: 1450px){
-	.container{
-		margin:1% 3% !important;
-		padding:5% 3% !important;
+@media only screen and (min-width: 1150px) and (max-width: 1450px) {
+	.container {
+		margin: 1% 3% !important;
+		padding: 5% 3% !important;
 		font-size: 20px !important;
 	}
-    .header_container, .side_bar .align_div button  {
-        font-size: 20px;
-    }
-    .side_image h1::after{
-        width:30px;
-    }
 
-	#up_arrow{
+	.header_container,
+	.side_bar .align_div button {
+		font-size: 20px;
+	}
+
+	.side_image h1::after {
+		width: 30px;
+	}
+
+	#up_arrow {
 		position: relative;
-		right:1px;
-		width:35px;
-		height:30px;
-	  }
-	  .reviewer{
-		height:250px;
-	  }
-	  .header_container{
-		margin:3% 4%
-	  }
-	  .tab p{
-		font-size:1.2rem
-	  }
-	  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
-		gap:50px;
-	  }
+		right: 1px;
+		width: 35px;
+		height: 30px;
+	}
 
-	  #third_page{
-		gap:50px;
-	  }
-	  .info_square{
-		padding:10px 50px 10px 25px;
-	  }
-	  #main_heading {
+	.reviewer {
+		height: 250px;
+	}
+
+	.header_container {
+		margin: 3% 4%
+	}
+
+	.tab p {
+		font-size: 1.2rem
+	}
+
+	#mission:checked~.tab.mission_content,
+	#vision:checked~.tab.vision_content,
+	#value:checked~.tab.value_content {
+		gap: 50px;
+	}
+
+	#third_page {
+		gap: 50px;
+	}
+
+	.info_square {
+		padding: 10px 50px 10px 25px;
+	}
+
+	#main_heading {
 		font-size: 2.5rem;
 	}
-	#offer{
+
+	#offer {
 		transform: unset;
 	}
-	#right_column{
-		gap:30px;
+
+	#right_column {
+		gap: 30px;
 	}
+
 	.footer_links .logo {
 		width: 40%;
 		height: auto;
 	}
-	.blogs{
+
+	.blogs {
 		flex-direction: column;
-		gap:5px;
+		gap: 5px;
 	}
-	.blog_desc h2{
-		font-size:1.2rem
+
+	.blog_desc h2 {
+		font-size: 1.2rem
 	}
-	.left_bottom{
-		width:350px;
+
+	.left_bottom {
+		width: 350px;
 	}
-    #fifth_page{
-        gap:50px;
-        }
-        #sloutions{
-            margin-top:50px;
-        }
+
+	#fifth_page {
+		gap: 50px;
+	}
+
+	#sloutions {
+		margin-top: 50px;
+	}
 }
 
 @media only screen and (min-width: 200px) and (max-width: 1150px) {
-	.container{
-		margin:1% 3% !important;
-		padding:5% 3% !important;
+	.container {
+		margin: 1% 3% !important;
+		padding: 5% 3% !important;
 		font-size: 30px !important;
 
 	}
-    .header_container  {
-        font-size: 30px;
+
+	.header_container {
+		font-size: 30px;
 		margin-top: 85px;
 		margin-bottom: 210px;
-    }
-    .side_image h1::after{
-        width:30px;
-    }
+	}
 
-	  .reviewer{
-		width:450px;
+	.side_image h1::after {
+		width: 30px;
+	}
+
+	.reviewer {
+		width: 450px;
 		align-self: center;
-	  }
+	}
 
 
-	  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
-		gap:50px;
-	  }
+	#mission:checked~.tab.mission_content,
+	#vision:checked~.tab.vision_content,
+	#value:checked~.tab.value_content {
+		gap: 50px;
+	}
 
-	  #third_page{
-		gap:50px;
-	  }
+	#third_page {
+		gap: 50px;
+	}
 
-	  #main_heading {
+	#main_heading {
 		font-size: 2.5rem;
 	}
-	#offer{
+
+	#offer {
 		transform: unset;
 	}
-	#right_column{
-		gap:30px;
+
+	#right_column {
+		gap: 30px;
 	}
+
 	.footer_links .logo {
 		width: 40%;
 		height: auto;
 	}
-	.blogs{
-		flex-direction: column;
-		gap:5px;
-	}
-	.blog_desc h2{
-		font-size:1.2rem
-	}
-	.left_bottom{
-		width:350px;
-	}
-    #fifth_page{
-        gap:50px;
-        }
-        #sloutions{
-            margin-top:50px;
-        }
-		.column_flex{
-			flex-direction: column;
-			align-items: center;
-			gap:50px;
-		}
-		#offer_section{
-			height:400px;
-			justify-content: space-between;
-		}
-		.left_contain, .right_contain, #blog_section,
-		#contact_us {
-			width:80%;
-		}
-		button, input, textarea{
-			font-size:25px;
-		}
-		#left_container{
-			display: block !important;
-		}
-		#blog_section{
-			border-right:none;
-		}
-		#help_section{
-			align-items: start;
-		}
-		.blog_pics{
-			width:500px;
-			height:auto !important
-		}
-		.reverse_flex{
-			flex-direction: column-reverse;
-		}
-		.reviewer{
-			width:400px;
-			align-self: center;
-		}
-		.logo{
-			width:30%;
-		}
-		.info{
-			width:100%;
-		}
 
-		#up_arrow{
-			display: none;
-		}
-		.centerized_text{
-			text-align: center;
-		}
-		.team{
-			width:100%;
-			height: auto;
-		}
-		.list h1{
-			font-size:2rem;
-		}
-		#offer{
-			align-self: center;
-		}
-		#offer_section p, .tab p{
-			font: unset;
-		}
-		
+	.blogs {
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.blog_desc h2 {
+		font-size: 1.2rem
+	}
+
+	.left_bottom {
+		width: 350px;
+	}
+
+	#fifth_page {
+		gap: 50px;
+	}
+
+	#sloutions {
+		margin-top: 50px;
+	}
+
+	.column_flex {
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+
+	#offer_section {
+		height: 400px;
+		justify-content: space-between;
+	}
+
+	.left_contain,
+	.right_contain,
+	#blog_section,
+	#contact_us {
+		width: 80%;
+	}
+
+	button,
+	input,
+	textarea {
+		font-size: 25px;
+	}
+
+	#left_container {
+		display: block !important;
+	}
+
+	#blog_section {
+		border-right: none;
+	}
+
+	#help_section {
+		align-items: start;
+	}
+
+	.blog_pics {
+		width: 500px;
+		height: auto !important
+	}
+
+	.reverse_flex {
+		flex-direction: column-reverse;
+	}
+
+	.reviewer {
+		width: 400px;
+		align-self: center;
+	}
+
+	.logo {
+		width: 30%;
+	}
+
+	.info {
+		width: 100%;
+	}
+
+	#up_arrow {
+		display: none;
+	}
+
+	.centerized_text {
+		text-align: center;
+	}
+
+	.team {
+		width: 100%;
+		height: auto;
+	}
+
+	.list h1 {
+		font-size: 2rem;
+	}
+
+	#offer {
+		align-self: center;
+	}
+
+	#offer_section p,
+	.tab p {
+		font: unset;
+	}
+
 }
