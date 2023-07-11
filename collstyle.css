@@ -118,7 +118,7 @@ cursor: pointer;
 	border: none;
 	border-radius: 10px;
 	background: #82cefd;
-	width: fit-content;
+	min-width: fit-content;
 }
 
 .lang_button,
@@ -324,10 +324,6 @@ main section #offer p>span:nth-child(2) {
 	flex-direction: column-reverse;
 }
 
-.right_side h1 {
-	font-size: 4rem;
-
-}
 
 .info_square p {
 	width: max-content;
@@ -371,7 +367,8 @@ main section #offer p>span:nth-child(2) {
 
 .left_contain h1,
 .tab h1,
-.top h1 {
+.top h1,
+.right_side h1 {
 	font-size: 3rem;
 }
 
@@ -468,7 +465,7 @@ main section #offer p>span:nth-child(2) {
 }
 
 .tab p {
-	font-size: 1.3rem
+	font-size: 1.5rem
 }
 
 #sloutions {
@@ -507,11 +504,9 @@ main section #offer p>span:nth-child(2) {
 #project_seciton {
 	gap: 30px;
 }
-
-.top p {
+.centerized_text{
 	text-align: center;
 }
-
 .side_image h1::after {
 	background-image: url(images/next.png);
 	background-size: 20px;
@@ -597,7 +592,6 @@ main section #offer p>span:nth-child(2) {
 .info_square,
 #up_arrow {
 	border-radius: 10px;
-
 }
 
 #name,
@@ -614,7 +608,7 @@ main section #offer p>span:nth-child(2) {
 
 #blog_section,
 #contact_us {
-	width: 50%;
+	width: 80%;
 	margin-left: 5%;
 }
 
@@ -700,21 +694,6 @@ main section #offer p>span:nth-child(2) {
 		padding:5% 5% !important;
 	}
 
-	#main_heading {
-		font-size: 4rem;
-	}
-	.review p:first-of-type {
-		font-size: 2rem;
-		opacity: 60%;
-	}
-	.left_contain h1,
-.tab h1,
-.top h1 {
-	font-size: 2.5rem;
-}
-.right_side h1 {
-	font-size: 3rem;
-}
 .projects, .team{
 	height:350px;
   }
@@ -733,47 +712,6 @@ main section #offer p>span:nth-child(2) {
 
   @media only screen and (max-width: 1650px) {
 	.container{
-		margin:2% 5% !important;
-		padding:5% 4% !important;
-	}
-	#main_heading {
-		font-size: 3.5rem;
-	}
-	.review p:first-of-type {
-		font-size: 1.5rem;
-		opacity: 50%;
-	}
-	.left_contain h1,
-.tab h1,
-.top h1 {
-	font-size: 2rem;
-}
-.right_side h1 {
-	font-size: 2.5rem;
-}  .projects, .team{
-	height:300px;
-  }
-
-  #offer_image img{
-	height: 550px;
-  }
-  #offer_image{
-	width:auto;
-  }
-  #right_container img{
-	height:530px;
-  }
-  #up_arrow{
-	right:10px;
-  }
-  .reviewer{
-	height: 550px;;
-  }
-
-  }
-
-  @media only screen and (max-width: 1450px) {
-	.container{
 		margin:2% 4% !important;
 		padding:5% 3% !important;
 	}
@@ -784,14 +722,7 @@ main section #offer p>span:nth-child(2) {
 		font-size: 1.3rem;
 		opacity: 60%;
 	}
-	.left_contain h1,
-.tab h1,
-.top h1 {
-	font-size: 1.5rem;
-}
-.right_side h1 {
-	font-size: 2rem;
-  }
+
   #up_arrow{
 	right:1px;
 	width:40px;
@@ -825,10 +756,9 @@ main section #offer p>span:nth-child(2) {
   .left_bottom{
 	width:400px;
 }
+  }
 
-}
-
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 1150px) and (max-width: 1450px){
 	.container{
 		margin:1% 3% !important;
 		padding:5% 3% !important;
@@ -842,6 +772,7 @@ main section #offer p>span:nth-child(2) {
     }
 
 	#up_arrow{
+		position: relative;
 		right:1px;
 		width:35px;
 		height:30px;
@@ -894,50 +825,40 @@ main section #offer p>span:nth-child(2) {
         #sloutions{
             margin-top:50px;
         }
-
 }
-@media only screen and (max-width: 1030px) {
 
+@media only screen and (min-width: 200px) and (max-width: 1150px) {
 	.container{
-		margin:0 5% !important;
-		padding:5% 2.5% !important;
-	}
+		margin:1% 3% !important;
+		padding:5% 3% !important;
+		font-size: 30px !important;
 
-	#up_arrow{
-		right:1px;
-		width:35px;
-		height:40px
+	}
+    .header_container  {
+        font-size: 30px;
+		margin-top: 85px;
+		margin-bottom: 210px;
+    }
+    .side_image h1::after{
+        width:30px;
+    }
+
+	  .reviewer{
+		width:450px;
+		align-self: center;
 	  }
-	  .info{
-		width:100%;
-	  }
-	  .reviewer, .team{
-		height:200px;
-	  }
-	  .header_container{
-		margin:3% 2%
-	  }
-	  .bttns{
-		padding:20px 10px;
-	  }
-	  .tab p{
-		font-size:1.2rem
-	  }
+
+
 	  #mission:checked~.tab.mission_content, #vision:checked~.tab.vision_content, #value:checked~.tab.value_content{
 		gap:50px;
 	  }
 
 	  #third_page{
 		gap:50px;
-        margin:0 !important;
 	  }
-	  .info_square{
-		padding:10px 50px 10px 25px;
-        width:150px;
-        height:250px;
-	  }
+
 	  #main_heading {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 	#offer{
 		transform: unset;
@@ -949,9 +870,6 @@ main section #offer p>span:nth-child(2) {
 		width: 40%;
 		height: auto;
 	}
-	.side_image h1::after{
-		width:10px;
-	}
 	.blogs{
 		flex-direction: column;
 		gap:5px;
@@ -960,16 +878,75 @@ main section #offer p>span:nth-child(2) {
 		font-size:1.2rem
 	}
 	.left_bottom{
-		width:250px;
+		width:350px;
 	}
     #fifth_page{
-    gap:50px;
-    }
-    #sloutions{
-        margin-top:50px;
-    }
-    .right_side p{
-        width:100%;
-    }
+        gap:50px;
+        }
+        #sloutions{
+            margin-top:50px;
+        }
+		.column_flex{
+			flex-direction: column;
+			align-items: center;
+			gap:50px;
+		}
+		#offer_section{
+			height:400px;
+			justify-content: space-between;
+		}
+		.left_contain, .right_contain, #blog_section,
+		#contact_us {
+			width:80%;
+		}
+		button, input, textarea{
+			font-size:25px;
+		}
+		#left_container{
+			display: block !important;
+		}
+		#blog_section{
+			border-right:none;
+		}
+		#help_section{
+			align-items: start;
+		}
+		.blog_pics{
+			width:500px;
+			height:auto !important
+		}
+		.reverse_flex{
+			flex-direction: column-reverse;
+		}
+		.reviewer{
+			width:400px;
+			align-self: center;
+		}
+		.logo{
+			width:30%;
+		}
+		.info{
+			width:100%;
+		}
 
+		#up_arrow{
+			display: none;
+		}
+		.centerized_text{
+			text-align: center;
+		}
+		.team{
+			width:100%;
+			height: auto;
+		}
+		.list h1{
+			font-size:2rem;
+		}
+		#offer{
+			align-self: center;
+		}
+		#offer_section p, .tab p{
+			font: unset;
+		}
+		
 }
